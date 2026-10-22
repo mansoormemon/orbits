@@ -178,7 +178,7 @@ function draw(seconds) {
 
   gl.uniformMatrix4fv(program.uniforms.p, false, p);
 
-  const v = m4view([3, 2, 7], [0, 0, 0], [0, 1, 0]);
+  const v = m4view([-1, 2, 7], [0, 0, 0], [0, 1, 0]);
 
   gl.bindVertexArray(octa.vao);
   const octahedronRadius = 0.15;
